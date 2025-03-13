@@ -36,6 +36,7 @@ var shortcuts = [
     category: 'Subtitle',
     shortcuts: [
       {keys: '[Ctrl+Shift] ← / →', effect: 'Adjust subtitle delay [subtitle]'},
+      {keys: '[Shift] f / g', effect: 'Adjust subtitle size [0.100]'},
       {keys: 'z / Z', effect: 'Adjust subtitle delay [0.1sec]'},
       {keys: 'v', effect: 'Toggle subtitle visibility'},
       {keys: 'u', effect: 'Toggle subtitle style overrides'},
@@ -242,7 +243,7 @@ var Keybindings = [
     keys: 'k',
     effect: 'prev line',
     callback: function() {
-      State.startLine = Math.max(0, State.startine - 1)
+      State.startLine = Math.max(0, State.startLine - 1)
       render()
     },
     options: 'repeatable'
